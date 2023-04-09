@@ -7,16 +7,18 @@ Arduino library for MFRC522 based modules via Serial UART interface.
 Methods
 =======
 
-#### void begin(HardwareSerial *serial);
+```c++
+void begin(HardwareSerial *serial);
 
-#### bool available();
+bool available();
 
-#### void wait();
+void wait();
 
-#### void readCardSerial();
+void readCardSerial();
 
-#### byte *getCardSerial();
+byte *getCardSerial();
 
-#### bool getBlock(byte block, byte keyType, byte *key, byte *returnBlock);
+bool getBlock(byte block, byte keyType, byte *key, byte *returnBlock);
 
-#### bool writeBlock(byte block, byte keyType, byte *key, byte *data);
+bool writeBlock(byte block, byte keyType, byte *key, byte *data);
+```
